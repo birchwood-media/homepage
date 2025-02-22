@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birchwood-Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Logo" class="logo">
+                <h1>Birchwood</h1>
+        </header>
+        
+        <h2 id="quoteDisplay">Kleine Filme</h2>
+
+        <div class="buttons">
+            <img src="images/button_001.png" alt="Button 1" class="custom-button" onclick="changeContent('video1.mp4', 'images/background_001.png')">
+            <img src="images/button_002.png" alt="Button 2" class="custom-button" onclick="changeContent('video2.mp4', 'images/background_002.png')">
+            <img src="images/button_003.png" alt="Button 3" class="custom-button" onclick="changeContent('video3.mp4', 'images/background_003.png')">
+            <img src="images/button_004.png" alt="Button 4" class="custom-button" onclick="changeContent('video4.mp4', 'images/background_004.png')">
+        </div>
+        
+        <div class="video-container">
+            <video id="customVideo" autoplay muted loop>
+                <source src="Video/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-controls">
+            <button id="rewind" class="control-button"><img src="images/rewind.png" alt="Rewind"></button>
+            <button id="playPause" class="control-button"><img src="images/play.png" alt="Play"></button>
+            <button id="muteUnmute" class="control-button"><img src="images/mute.png" alt="Mute"></button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>Ihr könnt mir immer eine Mail schreiben unter:</p>
+                <p>Email: info@birchwood-media.de</p>
+                <p>Diese Website verarbeitet keine Personenbezogenen Daten!</p>
+                <div class="footer-gifs">
+                    <img src="images/3demail.gif" alt="3demail.gif">
+                    <img src="images/world.gif" alt="world.gif">
+                    <img src="images/spinningcd.gif" alt="spinningcd.gif">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
